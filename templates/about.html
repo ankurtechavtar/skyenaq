@@ -1,0 +1,178 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+<body>
+<!-- preloader -->
+<div class="preloader">
+    <div class="loading-text">
+      <span>L</span>
+      <span>O</span>
+      <span>A</span>
+      <span>D</span>
+      <span>I</span>
+      <span>N</span>
+      <span>G</span>
+    </div> 
+</div>
+<!-- preloader end -->
+<!-- header -->
+<header id="stickyHeader">
+  <div class="container">
+    <div class="top-bar">
+      <div class="logo">
+        <a href="#">
+          <img alt="logo" src="{% static 'assets/img/logo.png' %}">
+
+        </a>
+      </div>
+      <nav class="navbar">
+          <ul class="navbar-links">
+            {% comment %} <li class="navbar-dropdown menu-item-children">
+              <a href="#">Demo Pages</a>
+              <ul class="sub-menu">
+                <li><a href="index.html">Demo 1</a></li>
+                <li><a href="index-2.html">Demo 2</a></li>
+                <li><a href="index-3.html">Demo 3</a></li>
+                <li><a href="index-4.html">Demo 4</a></li>
+              </ul>
+            </li>  {% endcomment %}
+            <li class="navbar-dropdown">
+              <a href="#about"> About </a>
+            </li>
+            <li class="navbar-dropdown">
+              <a href="#services">Services</a>
+            </li>
+            <li class="navbar-dropdown">
+              <a href="#team">Team</a>
+            </li>
+            <li class="navbar-dropdown">
+              <a href="#pricing">Pricing</a>
+            </li>
+            <li class="navbar-dropdown">
+              <a href="#blog">blog</a>
+            </li>
+          </ul>
+        </nav>
+      <a href="callto:+12344502086"><i class="flaticon-smart-phone"></i><b> +1234 450 2086</b></a>
+    </div>
+  </div>
+</header>
+<!-- header end -->
+<!-- style="background-image: url(assets/img/line-img.jpg);" -->
+
+<section class="hero-section" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="hero-text sec-title-animation animation-style2">
+            {% comment %} <span class="title-animation">About </span> {% endcomment %}
+            <div class="centered-content">
+                {% comment %} <h2 class="title-animationhead">About</h2> {% endcomment %}
+                <h5 class="title-animation">
+                    At Skyenaq, our mission is to empower MSMEs by providing a seamless platform for goods and services. We envision a future where businesses thrive through transparent, efficient, and innovative solutions. Our core values are integrity, collaboration, and customer-centricity, driving us to deliver excellence in everything we do.
+                </h5>
+            </div>
+            
+          </div>
+         
+        </div>
+        
+      </div>
+    </div>
+   
+  </section> 
+   
+  <div class="clients" style="
+  width: 464px;
+  height: 270px;
+  border-radius: 35px;
+  background: rgba(255, 255, 255, 1);
+  padding: 20px;
+  box-sizing: border-box;
+">
+  <div class="clients-img" style="display: flex; align-items: center;">
+    <img src="https://placehold.co/80x80" alt="img" style="width: 80px; height: 80px; border-radius: 50%; margin-right: 20px;">
+    <div>
+      <div class="d-flex" style="flex-direction: column; align-items: center;">
+        <h3 style="
+          font-family: Jura;
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 67px;
+          letter-spacing: 0px;
+          text-align: center;
+          vertical-align: middle;
+          background: linear-gradient(235.7deg, #0A0952 -7.04%, #D93C65 168.74%);
+          -webkit-background-clip: text;
+          color: transparent;
+          margin-bottom: 5px;
+        ">
+          Jhon
+        </h3>
+
+        <ul class="star" style="padding: 0; margin: 0; text-align: center;">
+          <li style="
+            font-family: Jura;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 17px;
+            letter-spacing: 0px;
+            vertical-align: middle;
+            background: linear-gradient(235.7deg, #0A0952 -7.04%, #D93C65 168.74%);
+            -webkit-background-clip: text;
+            color: transparent;
+          ">
+            CEO of Innovatech Solutions Jhon
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <p style="
+    font-family: Jura;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(10, 9, 82, 1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+  ">
+    “Working with SKYENAQ has been an absolute game-changer. Their team delivers top-notch solutions with precision and efficiency.”
+  </p>
+</div>
+
+
+
+  <style>
+    .centered-content {
+        display: flex;
+        flex-direction: column; /* Stacks the text vertically */
+        justify-content: center; /* Vertically centers the content */
+        align-items: center; /* Horizontally centers the content */
+        text-align: center; /* Ensures the text is aligned in the center */
+       /* Full viewport height */
+        padding: 20px;
+    }
+    
+    .title-animation {
+        margin: 10px 0; /* Add some space between the text */
+    }
+    .title-animationhead{
+        font-size: 24px; /* Adjust the font size to your desired value */
+        font-weight: bold;
+    }
+    
+  </style>
+ 
+
+
+
+
+
+</body>
+{% endblock %}
